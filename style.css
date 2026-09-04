@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: black;
+  color: wheat;
+}
+.showcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 0 30px;
+}
+.my-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: black;
+  padding: 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.username {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.showcase img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
