@@ -2,34 +2,137 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial scale" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for Baah Rose Sika, a UI/UX and web designer."
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>ROSIKA ATELIER</title>
   </head>
   <body>
-    <div class="my-form">
-      <span style="width: 100%">
-        <a href="#" class="username">Portfolio</a>
-      </span>
-      <span class="nav">
-        <a href="#">Home</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">About me</a>
-        <a href="#">Contact</a>
-      </span>
-    </div>
-    <div class="showcase">
-        <div class="text"
-        <h1>Hello,</h1>
-        <p>
-          <h3 style="font-style: italic;">I am Baah Rose Sika.</h3> A passionate UU/UX and Web Designer. I create
-          clean, user-friendly designs that help businesses connect with their
-          audience. Let's build something great together!
-        </p>
-         <button style="padding: 5px; margin: 2px; border-radius: 2px; ">See more</button>
+    <header class="topbar">
+      <a href="#home" class="brand">ROSIKA ATELIER</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="button button-ghost">Hire Me</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">UI/UX &amp; Web Designer</p>
+          <h1>Hello, I’m <span>Baah Rose Sika.</span></h1>
+          <p class="lead">
+            I create clean, user-friendly digital experiences that help brands
+            connect with their audience and stand out online.
+          </p>
+
+          <div class="cta-row">
+            <a href="#projects" class="button button-primary">See more</a>
+            <a href="#contact" class="button button-secondary">Let’s talk</a>
+          </div>
+
+          <ul class="stats" aria-label="Key metrics">
+            <li><strong>3+</strong><span>Years</span></li>
+            <li><strong>24</strong><span>Projects</span></li>
+            <li><strong>100%</strong><span>Passion</span></li>
+          </ul>
         </div>
-      <img src="./fashion.styles.jpg" alt="Fashion" />
-    </div>
+
+        <div class="hero-visual" aria-label="Portrait of Baah Rose Sika">
+          <div class="portrait-ring">
+            <img src="./fashion.styles.jpg" alt="Baah Rose Sika portrait" />
+          </div>
+
+          <div class="floating-card">
+            <span class="card-tag">Available</span>
+            <strong>Designing modern experiences</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">What I do</p>
+          <h2>Creative solutions for digital brands</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="icon">✦</span>
+            <h3>UI/UX Design</h3>
+            <p>
+              Thoughtful interfaces and intuitive flows that make every user
+              interaction feel seamless.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="icon">✧</span>
+            <h3>Brand Identity</h3>
+            <p>
+              Visual direction and storytelling that help businesses express who
+              they are with clarity and confidence.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="icon">✷</span>
+            <h3>Web Design</h3>
+            <p>
+              Responsive, elegant websites that look exceptional and perform
+              beautifully on every device.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-copy">
+          <p class="eyebrow">About me</p>
+          <h2>Designing with purpose, beauty, and intention.</h2>
+          <p>
+            I’m a multidisciplinary designer focused on crafting memorable
+            digital experiences that balance aesthetics with usability. Every
+            project begins with understanding the people behind the brand, then
+            turning those insights into design systems that feel authentic and
+            impactful.
+          </p>
+        </div>
+
+        <div class="about-panel">
+          <div>
+            <strong>01</strong>
+            <p>Strategy-led design thinking</p>
+          </div>
+          <div>
+            <strong>02</strong>
+            <p>Clean, modern visual direction</p>
+          </div>
+          <div>
+            <strong>03</strong>
+            <p>Friendly, collaborative workflow</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-panel">
+          <p class="eyebrow">Let’s create something beautiful</p>
+          <h2>Need a standout digital presence?</h2>
+          <a href="mailto:hello@rosikaatelier.com" class="button button-primary"
+            >hello@rosikaatelier.com</a
+          >
+        </div>
+      </section>
+    </main>
   </body>
 </html>
